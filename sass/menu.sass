@@ -1,0 +1,77 @@
+nav.main-menu
+
+	display: block
+	width: 100%
+	padding: 1.25em 0 1.25em 0
+	background-color: #fcb040
+	font-family: Bebas
+	
+	a
+		display: block
+		text-decoration: none
+	
+
+nav.main-menu.full
+	/*border-bottom: 1px solid rgba(0,0,0,0.25)*/
+	text-align: center
+
+	ul
+		display: block
+		width: 1200px
+		margin: auto
+		max-width: 100%
+
+	li.current
+		a
+			font-weight: 600
+
+		&:hover
+			color: black
+
+	li
+		display: inline-block
+		padding: 0 2em
+		border-right: 1px solid black
+
+		&:last-child
+			border: none
+
+		a
+			font-size: 2.5em
+			color: black
+			transition: color 0.25s ease-in-out
+
+			&:hover
+				color: lighten(#231f20, 20%)
+	
+	.compact-menu
+		display: none
+	
+
+nav.main-menu.compact
+	border-bottom: 1px solid rgba(0,0,0,0.25)
+	padding: 0
+	text-align: center
+
+	ul
+		display: none
+		width: 100%
+		font-size: 2em
+	
+	li
+		display: block
+	
+	.compact-menu
+		display: block
+		text-align: center
+		font-size: 3em
+		padding: 1em
+
+		a
+			color: #231f20
+
+		&:hover
+			color: lighten(#231f20, 20%)
+
+.screen-reader-text
+	display: none

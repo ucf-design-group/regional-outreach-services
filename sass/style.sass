@@ -1,0 +1,69 @@
+/*!
+ Theme Name: Regional Outreach Services
+ Theme URI: http://github.com/billcolumbia/MiniBill
+ Description: A minimal starting point for WordPress, adapted from Underscores.me
+ Author: Bill Columbia, AJ Foster
+ Author URI: http://billcolumbia.com, http://aj-foster.com
+ Version: 0.91
+ Tags: minimal, fast, light
+ License: None, feel free to hack :)
+ */
+
+// Change this to whatever you'd like. This is just the defualt so we 
+// have something nice to prototype with.
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700")
+
+// Necessary imports, feel free to explore and hack though :)
+@import reset, menu, footer, home, variables, about, events
+
+// Font inclusion
+@font-face
+	font-family: 'Bebas'
+	src: url('resources/BebasNeue-webfont.ttf') format('opentype')
+	font-weight: normal
+	font-style: normal
+
+// Base variables
+$baseTypeFace: 'Open Sans', sans-serif
+
+// Base layout/type
+html
+	font-size: 16px
+body
+	font: 62.5%/1.5 $baseTypeFace
+	font-weight: 600 
+	background: url(resources/bright_squares.png)
+	overflow-x: hidden
+	background-color: whitesmoke
+	
+// Clearfix (to use, @extend %clearfix)
+%clearfix
+	zoom: 1
+	&:before, &:after
+		content: ""
+		display: table 
+	&:after
+		clear: both
+
+//Headings
+h1
+	font-size: 2.75em
+	font-family: Bebas
+h2
+	font-size: 3em
+h3
+	font-size: 2em
+p
+	font-size: 1.75em
+
+// Header
+.ros-wrap
+	height: 100%
+	width: 100%
+
+.logo-wrap
+	padding: 0
+	width: 1200px
+	margin: 1em auto 0 auto
+	max-width: 100%
+	text-align: center
